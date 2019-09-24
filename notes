@@ -1,0 +1,43 @@
+>> Setting up a web server
+- Navigate to directory
+- add live server
+Marks-MBP:indecision-app marksandora$ yarn global add live-server
+- serve public folder of directory (Run live-server)
+Marks-MBP:indecision-app marksandora$ live-server public
+
+
+>> Setting Up Babel
+- Install Babel globally using npm
+Marks-MBP:indecision-app marksandora$ npm install -g babel-cli@6.24.1
+- Create Package.json
+Marks-MBP:indecision-app marksandora$ yarn init
+- install dependencies (React and env)
+Marks-MBP:indecision-app marksandora$ yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2
+
+- Create src folder with app.js inside, this is where we write jsx
+- Convert it to javascript within scripts folder by running this command
+Marks-MBP:indecision-app marksandora$ babel src/app.js --out-file=public/scripts/app.js --presets=env,react
+- Add Watch argument so that it will update as I work
+Marks-MBP:indecision-app marksandora$ babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+- If I somehow delete package.json I can reinstall all dependencies with this command (regenerate node_modules folder)
+Marks-MBP:indecision-app marksandora$ yarn install
+
+- React must have a single root element
+- Classes on elements are renamed to className="myClass"
+
+-Method Binding Chapter 30 very confusing
+You only need to bind a method if it uses the 'this' keyword inside of it.
+
+- install css loader
+yarn add style-loader@0.18.2 css-loader@0.28.4
+
+
+https://budget-app.mead.io/dashboard
+https://github.com/andrewjmead/react-course-2-expensify-app
+
+
+
+git init
+git add .gitignore
+git remote add origin git@github.com:MarkSandora/IndecisionApp
