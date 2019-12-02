@@ -4,7 +4,7 @@ console.log(path.join(__dirname, 'public'));
 
 //***/ entry -> output
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/playground/redux-expensify.js',
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
