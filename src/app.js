@@ -15,9 +15,9 @@ import './styles/styles.scss';
 const store = configureStore();
 
 
-store.dispatch(addExpense({ description: 'Water Bill', amount: 4500, createdAt: 1000 }));
-store.dispatch(addExpense({ description: 'Gas Bill', createdAt: 1000 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 109500, createdAt: 1000 }));
+store.dispatch(addExpense({ description: 'Water Bill', amount: 4500, createdAt: 1575478800000 }));
+store.dispatch(addExpense({ description: 'Gas Bill', createdAt: 1577034000000 }));
+store.dispatch(addExpense({ description: 'Rent', amount: 109500, createdAt: 1575219600000 }));
 
 
 const state = store.getState();
