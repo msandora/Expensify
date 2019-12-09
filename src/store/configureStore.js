@@ -3,13 +3,15 @@ import expensesReducer from '../reducers/expenses';
 import filtersReducer from '../reducers/filters';
 
 export default () => {
-    // Store creation, combines reducers
+    // Store creation
     const store = createStore(
+        // combines reducers
         combineReducers({
             expenses: expensesReducer,    
             filters: filtersReducer    
         }),
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // for redux dev tools
+        // for redux dev tools
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() 
     );
     return store;
 }
