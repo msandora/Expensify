@@ -1,1 +1,1 @@
-Fixtures are dummy data
+Fixtures are just dummy data
