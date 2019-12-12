@@ -41,3 +41,8 @@ https://github.com/andrewjmead/react-course-2-expensify-app
 git init
 git add .gitignore
 git remote add origin git@github.com:MarkSandora/IndecisionApp
+
+
+
+
+npm install --save-dev jest
