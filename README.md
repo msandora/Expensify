@@ -1,6 +1,9 @@
 # Expensify
 Built with React / Redux
 
+Run 'Npm install' to build out node modules
+Run 'npm test -- --watch' to run test cases
+
 "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "6.25.0",

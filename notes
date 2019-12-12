@@ -46,3 +46,22 @@ git remote add origin git@github.com:MarkSandora/IndecisionApp
 
 
 npm install --save-dev jest
+
+
+
+https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+
+//create ssh key
+ssh-keygen -t rsa -b 4096 -C "mark.sandora@gmail.com"
+
+id_rsa  = mypassword        id_rsa.pub = public password
+
+//check if its running or start it up
+eval "$(ssh-agent -s)"
+
+//add identity
+ssh-add ~/.ssh/id_rsa
+
+//copy key
+pbcopy < ~/.ssh/id_rsa.pub
+
