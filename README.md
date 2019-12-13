@@ -3,7 +3,7 @@ Stack: React, Redux
 
 https://ms-expensify.herokuapp.com/
 
-Run 'Npm install' to build out node modules 
+Run 'npm install' to build out node modules 
 
 Run 'npm test -- --watch' to run test cases 
 
@@ -39,6 +39,8 @@ Run 'npm test -- --watch' to run test cases
 
     "normalize.css": "^8.0.1",
 
+    "numeral": "^2.0.6", // http://numeraljs.com/
+
     "raf": "^3.3.2",
 
     "react": "^16.12.0",
@@ -67,9 +69,7 @@ Run 'npm test -- --watch' to run test cases
 
     "webpack": "^4.41.0",
 
-    "webpack-cli": "^3.3.9",
-
-    "webpack-dev-server": "^3.8.1"
+    "webpack-cli": "^3.3.9"
 
 },
 
@@ -83,6 +83,8 @@ Run 'npm test -- --watch' to run test cases
 
     "jest": "^20.0.4",  // https://jestjs.io/docs/en/getting-started
 
-    "react-test-renderer": "^16.12.0"
+    "react-test-renderer": "^16.12.0",
+
+    "webpack-dev-server": "^3.8.1"
 
 }

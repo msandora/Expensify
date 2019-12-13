@@ -48,6 +48,8 @@ git remote add origin git@github.com:MarkSandora/IndecisionApp
 npm install --save-dev jest
 
 
+//Install production dependencies
+npm install --production
 
 https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 
