@@ -21,6 +21,9 @@ const store = configureStore();
 // const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
 // console.log(visibleExpenses);
 
+import './firebase/firebase';
+// import './playground/promises';
+
 const jsx = (
     <Provider store={store}> 
         <AppRouter />
