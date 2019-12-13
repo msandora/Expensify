@@ -5,7 +5,6 @@
   "author": "Mark Sandora",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack --watch",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
@@ -22,10 +21,9 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "^3.2.0",
-    "express": "^4.15.4",
+    "express": "^4.17.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "global": "^4.4.0",
-    "live-server": "^1.2.1",
     "moment": "^2.24.0",
     "node-sass": "^4.13.0",
     "normalize.css": "^8.0.1",
@@ -43,14 +41,14 @@
     "uuid": "^3.3.3",
     "validator": "8.0.0",
     "webpack": "^4.41.0",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.1"
+    "webpack-cli": "^3.3.9"
   },
   "devDependencies": {
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "enzyme-to-json": "^3.0.1",
     "jest": "^20.0.4",
-    "react-test-renderer": "^16.12.0"
+    "react-test-renderer": "^16.12.0",
+    "webpack-dev-server": "^3.8.1"
   }
 }

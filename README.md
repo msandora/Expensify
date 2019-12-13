@@ -1,6 +1,8 @@
 # Expensify
 Stack: React, Redux
 
+https://ms-expensify.herokuapp.com/
+
 Run 'Npm install' to build out node modules 
 
 Run 'npm test -- --watch' to run test cases 
