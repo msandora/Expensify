@@ -65,3 +65,21 @@ ssh-add ~/.ssh/id_rsa
 //copy key
 pbcopy < ~/.ssh/id_rsa.pub
 
+
+
+
+
+Heroku commands:
+
+HSM000071:Expensify marksandora$ heroku create ms-expensify
+Creating ⬢ ms-expensify... done
+https://ms-expensify.herokuapp.com/ | https://git.heroku.com/ms-expensify.git
+HSM000071:Expensify marksandora$ git remote
+heroku
+origin
+HSM000071:Expensify marksandora$ git remote -v
+heroku  https://git.heroku.com/ms-expensify.git (fetch)
+heroku  https://git.heroku.com/ms-expensify.git (push)
+origin  https://github.com/msandora/Expensify.git (fetch)
+origin  https://github.com/msandora/Expensify.git (push)
+HSM000071:Expensify marksandora$ 
