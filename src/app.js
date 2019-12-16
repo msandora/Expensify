@@ -6,12 +6,10 @@ import configureStore from './store/configureStore';
 import 'normalize.css'; 
 import './styles/styles.scss'; 
 import 'react-dates/lib/css/_datepicker.css';
-
-// import { addExpense } from './actions/expenses';
-// import { setTextFilter } from './actions/filters';
-// import getVisibleExpenses from './selectors/expenses';
-
-const store = configureStore();
+import { startSetExpenses } from './actions/expenses';
+import { setTextFilter } from './actions/filters';
+import getVisibleExpenses from './selectors/expenses';
+import './firebase/firebase';
 
 // store.dispatch(addExpense({ description: 'Water Bill', amount: 4500, createdAt: 1575478800000 }));
 // store.dispatch(addExpense({ description: 'Gas Bill', createdAt: 1577034000000 }));
@@ -20,9 +18,9 @@ const store = configureStore();
 // const state = store.getState();
 // const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
 // console.log(visibleExpenses);
-
-import './firebase/firebase';
 // import './playground/promises';
+
+const store = configureStore();
 
 const jsx = (
     <Provider store={store}> 
@@ -30,4 +28,9 @@ const jsx = (
     </Provider>
 );
 
-ReactDOM.render(jsx, document.getElementById('app'));
+ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+
+store.dispatch(startSetExpenses()).then(() => {
+    ReactDOM.render(jsx, document.getElementById('app'));
+});
+
