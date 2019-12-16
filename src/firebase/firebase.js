@@ -16,20 +16,62 @@ firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
 
-// test it
+
+// var adaRef = firebase.database().ref('isSingle');
+
+
+
+
+// test set method
 database.ref().set({
-    name: 'Mark Sandora',
-    age: 37,
-    isSingle: false,
-    location: {
-        city: 'New York',
-        country: 'United States'
-    }
+	name: 'Mark Sandora',
+	age: 37,
+	isSingle: false,
+	location: {
+		city: 'New York',
+		country: 'United States'
+	}
+}).then(() => {
+    console.log("Data is saved")
+}).catch((e) => {
+	console.log("1st error", e)
 });
 
-database.ref('age').set(38);
-database.ref('location/city').set('Long Island');
-database.ref('attributes').set({
-    height: '6 foot',
-    weight: '210 lbs'
+// test remove method to remove data
+// database.ref()
+// 	.remove()
+// 	.then(function() {
+// 		console.log("Remove succeeded.")
+// 	})
+// 	.catch(function(e) {
+// 		console.log("Remove failed: " + e.message)
+// 	});
+
+// Use set method to remove data
+// database.ref('isSingle').set(null);
+
+database.ref().update({
+	name: 'Mike',
+	age: 29,
+	isSingle: true
 });
+
+
+
+
+
+
+
+// database.ref('age').set(38);
+// database.ref('location/city').set('Long Island');
+
+// database.ref('attributes').set({
+//     height: '75',
+//     weight: '150'
+// }).then(() => {
+// 	console.log("Data is saved") // successful sync to db
+// }).catch((e) => {
+//   console.log("2nd error", e) // This is the error
+// });
+
+// console.log('I made a request to change the data')
