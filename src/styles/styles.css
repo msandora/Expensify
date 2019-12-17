@@ -4,9 +4,11 @@ html {
 }
 
 body {
+  color: #333;
   background: white;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 button {
@@ -19,5 +21,132 @@ button:disabled {
 
 .is-active {
   font-weight: bold;
+}
+
+.box-layout {
+  background: url("/images/bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-layout__box {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 3px;
+  padding: 3.2rem 1.6rem;
+  text-align: center;
+  width: 25rem;
+}
+
+.box-layout__title {
+  margin: 0 0 1.6rem 0;
+  line-height: 1;
+}
+
+.button {
+  background: #1c88bf;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1;
+  padding: 1.2rem;
+  text-decoration: none;
+}
+
+.button--link {
+  background: none;
+}
+
+.header {
+  background: #364051;
+}
+
+.header__content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.2rem 0;
+}
+
+.header__title {
+  color: white;
+  text-decoration: none;
+}
+
+.header__title h1 {
+  margin: 0;
+}
+
+.content-container {
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  max-width: 80rem;
+}
+
+.page-header {
+  background: #f7f7f7;
+  margin-bottom: 3.2rem;
+  padding: 3.2rem 0;
+}
+
+.page-header__actions {
+  margin-top: 1.6rem;
+}
+
+.page-header__title {
+  font-weight: 300;
+  margin: 0;
+}
+
+.page-header__title span {
+  font-weight: bold;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.6rem;
+}
+
+@media (min-width: 45rem) {
+  .input-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.input-group__item {
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 45rem) {
+  .input-group__item {
+    margin: 0 1.2rem 0 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
