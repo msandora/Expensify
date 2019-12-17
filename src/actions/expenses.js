@@ -74,12 +74,12 @@ export const setExpenses = (expenses) => ({
 
 export const startSetExpenses = () => {
   return (dispatch) => {
-    return database.ref('expenses').once('value').then((snapshot) => {
-      const expenses = [];
-      snapshot.forEach((childSnapshot) => {
-        expenses.push({
+    return database.ref('expenses').once('value').then((snapshot) => { 
+      const expenses = []; // start with empty array
+      snapshot.forEach((childSnapshot) => { // parse data
+        expenses.push({ // push all expenses on array
           id: childSnapshot.key,
-          ...childSnapshot.val()
+          ...childSnapshot.val() // spread out all the values
         });
       });
 
