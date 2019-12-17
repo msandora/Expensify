@@ -3,11 +3,12 @@ import thunk from 'redux-thunk';
 import { 
     startAddExpense, 
     addExpense, 
+    startEditExpense,
     editExpense, 
-    removeExpense, 
     startRemoveExpense, 
-    setExpenses, 
-    startSetExpenses 
+    removeExpense,
+    startSetExpenses,
+    setExpenses
 } from '../../actions/expenses';
 import expenseData from '../fixtures/expenses';
 import database from '../../firebase/firebase';
@@ -59,6 +60,25 @@ test('should setup edit expense action object', () => {
         updates:  {
             note: 'New note value'
         }
+    });
+});
+
+test('should edit expense from firebase', (done) => {
+    const store = createMockStore({});
+    const id = expenseData[0].id;
+    const updates = { amount: 21045 };
+    store.dispatch(startEditExpense( id, updates )).then(() => {
+        const actions = store.getActions(); // Grab actions array
+        expect(actions[0]).toEqual({
+            type: 'EDIT_EXPENSE',
+            id,
+            updates
+        });
+        //Return promise
+        return database.ref(`expenses/${id}`).once('value');
+    }).then((snapshot) => {
+        expect(snapshot.val().amount).toBe(updates.amount);
+        done(); //Forces Jest to wait 
     });
 });
 
