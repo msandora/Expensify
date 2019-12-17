@@ -24,7 +24,6 @@ beforeEach((done) => {
     database.ref('expenses').set(expensesData).then(() => done());
 });
 
-
 test('should setup remove expense action object', () => {
     const action = removeExpense({ id: '123abc'});
     expect(action).toEqual({
@@ -153,7 +152,6 @@ test('should setup set expense action object with data', () => {
         expenses
     });
 });
-
 
 test('should fetch the expenses from firebase', (done) => {
     const store = createMockStore({});
