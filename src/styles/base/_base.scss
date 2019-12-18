@@ -1,4 +1,8 @@
 // rem
+* {
+  box-sizing: border-box;
+}
+
 html {
   /* Allows us to work with rem based on 10px */
   font-size: 62.5%;

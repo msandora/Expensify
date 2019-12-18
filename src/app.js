@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter'; 
+import LoadingPage from './components/LoadingPage';
 import configureStore from './store/configureStore';
 import 'normalize.css'; 
 import './styles/styles.scss'; 
@@ -10,7 +11,6 @@ import { startSetExpenses } from './actions/expenses';
 import { login, logout } from './actions/auth';
 import getVisibleExpenses from './selectors/expenses';
 import {firebase} from './firebase/firebase';
-
 // store.dispatch(addExpense({ description: 'Water Bill', amount: 4500, createdAt: 1575478800000 }));
 // store.dispatch(addExpense({ description: 'Gas Bill', createdAt: 1577034000000 }));
 // store.dispatch(addExpense({ description: 'Rent', amount: 109500, createdAt: 1575219600000 }));
@@ -34,7 +34,7 @@ const renderApp = () => {
     }
 };
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+ReactDOM.render(<LoadingPage/>, document.getElementById('app'));
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
