@@ -27,7 +27,6 @@
         background: $off-white;
     }
     @media (min-width: $desktop-breakpoint) {
-        align-items: center;
         flex-direction: row;
         justify-content: space-between;
         padding: $m-size;
@@ -46,6 +45,13 @@
 
 .list-item__title {
     margin: 0;
+    word-break: break-all;
+}
+
+.list-item__note {
+    color: $grey;
+    font-size: $font-size-medium;
+    margin: $s-size 0;
     word-break: break-all;
 }
 

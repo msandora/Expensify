@@ -15,7 +15,7 @@ exports[`should render Header Correctly 1`] = `
         to="/dashboard"
       >
         <h1>
-          Expensify!
+          Expensify
         </h1>
       </[object Object]>
       <button
