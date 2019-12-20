@@ -52,3 +52,4 @@ firebase.auth().onAuthStateChanged((user) => {
         history.push('/');
     }
 });
+

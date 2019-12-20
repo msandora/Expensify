@@ -86,7 +86,10 @@ origin  https://github.com/msandora/Expensify.git (fetch)
 origin  https://github.com/msandora/Expensify.git (push)
 HSM000071:Expensify marksandora$ git push heroku master
 
-
+>add heroku environment variable
+HSM000071:Expensify marksandora$ heroku config:set KEY=value
+>remove heroku environment variable
+HSM000071:Expensify marksandora$ heroku config:unset KEY=value
 
 
 
