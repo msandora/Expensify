@@ -91,7 +91,8 @@ HSM000071:Expensify marksandora$ heroku config:set KEY=value
 >remove heroku environment variable
 HSM000071:Expensify marksandora$ heroku config:unset KEY=value
 
-
+>> Get remote server
+HSM000071:Expensify marksandora$ heroku git:remote ms-expensify
 
 
 

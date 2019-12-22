@@ -1,6 +1,10 @@
 {
   "name": "expensify",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.14.0",
+    "yarn": "1.10.1"
+  },
   "main": "index.js",
   "author": "Mark Sandora",
   "license": "MIT",
@@ -55,7 +59,7 @@
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "enzyme-to-json": "^3.0.1",
-    "jest": "^20.0.4",
+    "jest": "^25.0.0",
     "react-test-renderer": "^16.12.0",
     "webpack-dev-server": "^3.8.1"
   }
