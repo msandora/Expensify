@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render ExpenseDashboardPage Correctly 1`] = `
+exports[`should render DashboardPage Correctly 1`] = `
 <div>
   <[object Object] />
   <[object Object] />
