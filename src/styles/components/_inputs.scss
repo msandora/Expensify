@@ -5,7 +5,13 @@
     font-weight: 300;
     padding: $s-size;
 }
-
+.DateInput_input, .DateInput_input__focused {
+    @extend .text-input;
+    background-color: transparent !important;
+}
+.DateInput {
+    background-color: transparent !important;
+}
 .select {
     @extend .text-input;
 }
