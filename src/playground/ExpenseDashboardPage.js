@@ -1,7 +1,7 @@
 import React from 'react';
-import ExpenseList from './ExpenseList';
-import ExpenseListFilters from './ExpenseListFilters';
-import ExpensesSummary from './ExpensesSummary';
+import ExpenseList from '../components/ExpenseList';
+import ExpenseListFilters from '../components/ExpenseListFilters';
+import ExpensesSummary from '../components/ExpensesSummary';
 import ExpensesSummaryNew from './ExpensesSummaryNew';
 
 const DashboardPage = () => (

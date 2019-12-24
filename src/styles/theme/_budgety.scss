@@ -166,6 +166,15 @@ body {
 .add__btn:focus { outline: none; }
 
 /***** LISTS *****/
+@media (min-width: $desktop-breakpoint) {
+
+  .incomes, .expenses {
+    width:50%;
+    float:left;
+    color:$expenses;
+  }
+}
+
 .container {
   width: 1000px;
   margin: 60px auto;
@@ -214,8 +223,8 @@ h2 {
   text-align: center;
 }
 
-.income .item__value,
-.income .item__delete--btn {
+.incomes .item__value,
+.incomes .item__delete--btn {
   color: #28B9B5;
 }
 

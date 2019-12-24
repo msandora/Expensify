@@ -1,13 +1,19 @@
 import React from 'react';
-import ExpenseList from './ExpenseList';
-import ExpenseListFilters from './ExpenseListFilters';
 import ExpensesSummary from './ExpensesSummary';
+import ExpenseListFilters from './ExpenseListFilters';
+import ExpenseList from './ExpenseList';
+import IncomeList from './income/IncomeList';
 
 const DashboardPage = () => (
   <div>
     <ExpensesSummary />
     <ExpenseListFilters />
-    <ExpenseList />
+    <div className="content-container">
+      <IncomeList />
+
+      <ExpenseList />
+    </div>
+
   </div>
 );
 
