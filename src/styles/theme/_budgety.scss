@@ -14,90 +14,7 @@ body {
 }
 
 .right { float: right; }
-.red { color: #ff5049 !important; }
-.red-focus:focus { border: 1px solid #FF5049 !important; }
 
-/**********************************************
-*** TOP PART
-**********************************************/
-
-.top {
-  height: 40vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/back.png);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.budget {
-  position: absolute;
-  width: 300px;
-  // width: 350px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-}
-
-.budget__title {
-  font-size: $font-size-large;
-    text-align: center;
-  margin-bottom: 10px;
-  font-weight: 300;
-}
-
-.budget__value {
-  font-weight: 300;
-  font-size: $font-size-xlarge;
-  text-align: center;
-  margin-bottom: $s-size;
-  letter-spacing: 2px;
-}
-
-.budget__income,
-.budget__expenses {
-  padding: $s-size;
-  text-transform: uppercase;
-  font-size: $font-size-large;
-  font-weight: 300;
-  line-height: 1;
-
-}
-
-.budget__income {
-  margin-bottom: 10px;
-  background-color: #28B9B5;
-}
-
-.budget__expenses {
-  background-color: #FF5049;
-}
-
-.budget__income--text,
-.budget__expenses--text {
-  float: left;
-}
-
-.budget__income--value,
-.budget__expenses--value {
-  letter-spacing: 1px;
-  float: left;
-}
-
-.budget__income--percentage,
-.budget__expenses--percentage {
-  float: left;
-  width: 34px;
-  font-size: 11px;
-  padding: 3px 0;
-  margin-left: 10px;
-}
-
-.budget__expenses--percentage {
-  background-color: rgba(255, 255, 255, 0.2);
-  text-align: center;
-  border-radius: 3px;
-}
 
 
 /**********************************************
@@ -169,30 +86,20 @@ body {
 
 /***** LISTS *****/
 @media (min-width: $desktop-breakpoint) {
-
+  .incomes{
+    margin-right: 2%;
+  }
   .incomes, .expenses {
-    width:50%;
+    width: 49%;
     float:left;
     color:$expenses;
   }
-}
-
-.container {
-  width: 1000px;
-  margin: 60px auto;
 }
 
 .income {
   float: left;
   width: 475px;
   margin-right: 50px;
-}
-
-h2 {
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 15px;
 }
 
 .income__title { color: #28B9B5; }

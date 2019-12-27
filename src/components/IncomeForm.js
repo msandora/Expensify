@@ -93,7 +93,7 @@ export default class IncomeForm extends React.Component {
                 >
                 </textarea>
                 <div>
-                    <button className="button">Save Income</button>
+                    <button className="income-bg button">Save Income</button>
                 </div>
             </form>
         )

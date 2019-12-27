@@ -1,0 +1,56 @@
+.top {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/back.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .budget {
+        position: absolute;
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        .budget__title {
+            font-size: $font-size-large;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        .budget__income,
+        .budget__expenses {
+          padding: $s-size;
+          text-transform: uppercase;
+          font-size: $font-size-large;
+          font-weight: 300;
+          line-height: 1;
+        }
+        .budget__income {
+            margin-bottom: 10px;
+            background-color: $incomes;
+        }
+        .budget__expenses {
+            background-color: $expenses;
+        }
+        .budget__income--text,
+        .budget__expenses--text {
+            float: left;
+        }
+        .budget__income--value,
+        .budget__expenses--value {
+            letter-spacing: 1px;
+            float: left;
+        }
+        .budget__income--percentage,
+        .budget__expenses--percentage {
+            float: left;
+            width: 34px;
+            font-size: 11px;
+            padding: 3px 0;
+            margin-left: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            text-align: center;
+            border-radius: 3px;
+        }
+    }
+}

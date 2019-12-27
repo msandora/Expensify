@@ -7,6 +7,7 @@ import DashboardPage from '../components/DashboardPage';
 import AddExpensePage from '../components/AddExpensePage';
 import AddIncomePage from '../components/AddIncomePage';
 import EditExpensePage from '../components/EditExpensePage';
+import EditIncomePage from '../components/EditIncomePage';
 import HelpPage from '../components/HelpPage';
 import NotFoundPage from '../components/NotFoundPage';
 import PrivateRoute from '../routers/PrivateRoute';
@@ -22,7 +23,8 @@ const AppRouter = () => (
       <PrivateRoute path="/dashboard" component={DashboardPage}/>
       <PrivateRoute path="/create-income" component={AddIncomePage} />
       <PrivateRoute path="/create-expense" component={AddExpensePage} />
-      <PrivateRoute path="/edit/:id" component={EditExpensePage} />
+      <PrivateRoute path="/edit-income/:id" component={EditIncomePage} />
+      <PrivateRoute path="/edit-expense/:id" component={EditExpensePage} />
       <Route path="/help" component={HelpPage} />
       <Route component={NotFoundPage} />
     </Switch>

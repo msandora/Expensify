@@ -2,7 +2,7 @@
 @import './base/settings';
 @import './base/base';
 
-@import './components/box-layout';
+@import './components/login-page';
 @import './components/button';
 @import './components/header';
 @import './components/content-container';
@@ -13,5 +13,6 @@
 @import './components/visibility';
 @import './components/list';
 @import './components/loader';
+@import './components/summary';
 
 @import './theme/budgety';

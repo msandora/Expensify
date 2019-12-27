@@ -12,7 +12,7 @@ const IncomeListItem = (props) => {
   return (
     <div className="list-item">
       <div className="item clearfix" id="income-0">
-        <Link to={`/edit/${props.id}`}>
+        <Link to={`/edit-income/${props.id}`}>
           <div className="item__description">
             {props.description}
             {props.note && <p className="list-item__note">{props.note}</p>}
@@ -35,12 +35,12 @@ const IncomeListItem = (props) => {
 
 // const mapStateToProps = (state, props) => {
 //   return {
-//     expense: state.expenses.find((expense) => expense.id === props.id
+//     incomes: state.incomes.find((income) => income.id === props.id
 //   }
 // };
 
 const mapDispatchToProps = (dispatch) => ({
-  startRemoveExpense: (data) => dispatch(startRemoveIncome(data))
+  startRemoveIncome: (data) => dispatch(startRemoveIncome(data))
 });
 
 export default connect(undefined, mapDispatchToProps)(IncomeListItem);

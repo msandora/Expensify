@@ -12,7 +12,6 @@ const DashboardPage = () => (
       <IncomeList />
       <ExpenseList />
     </div>
-
   </div>
 );
 

@@ -10,7 +10,7 @@ export default (incomes, { text, sortBy, startDate, endDate }) => {
       const endDateMatch = endDate ? endDate.isSameOrAfter(createdAtMoment, 'day') : true;
 
       const textMatch = income.description.toLowerCase().includes(text.toLowerCase()) || income.note.toLowerCase().includes(text.toLowerCase());
-      console.log(income.amount);
+      // console.log(income.amount);
       // IF all three are true, return
       return startDateMatch && endDateMatch && textMatch;
     }).sort((a, b) => {

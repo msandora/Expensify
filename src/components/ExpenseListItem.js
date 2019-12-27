@@ -12,7 +12,7 @@ const ExpenseListItem = (props) => {
   return (
     <div className="list-item">
       <div className="item clearfix" id="expense-0">
-        <Link to={`/edit/${props.id}`}>
+        <Link to={`/edit-expense/${props.id}`}>
           <div className="item__description">
             {props.description}
             {props.note && <p className="list-item__note">{props.note}</p>}
