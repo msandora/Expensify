@@ -1,4 +1,3 @@
-
 // OBJECT DESTRUCTURING
 
 // const person = {
