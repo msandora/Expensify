@@ -13,7 +13,7 @@ const IncomeListItem = (props) => {
     <div className="list-item item">
         <Link to={`/edit-income/${props.id}`}>
           <div className="item__description">
-            <p class="list-item__title">{props.description}</p>
+            <p className="list-item__title">{props.description}</p>
             {props.note && <p className="list-item__note">{props.note}</p>}
             <p className="list-item__sub-title">{moment(props.createdAt).format('MMMM Do, YYYY')}</p>
           </div>    
