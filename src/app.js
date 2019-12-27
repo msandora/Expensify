@@ -7,6 +7,7 @@ import configureStore from './store/configureStore';
 import 'normalize.css'; 
 import './styles/styles.scss'; 
 import 'react-dates/lib/css/_datepicker.css';
+import { startSetIncomes } from './actions/incomes';
 import { startSetExpenses } from './actions/expenses';
 import { login, logout } from './actions/auth';
 import getVisibleExpenses from './selectors/expenses';
@@ -41,6 +42,12 @@ firebase.auth().onAuthStateChanged((user) => {
         // console.log('uid', user.uid);
         store.dispatch(login(user.uid));
         store.dispatch(startSetExpenses()).then(() => {
+            renderApp();
+            if (history.location.pathname === '/') {
+                history.push('/dashboard')
+            }
+        });
+        store.dispatch(startSetIncomes()).then(() => {
             renderApp();
             if (history.location.pathname === '/') {
                 history.push('/dashboard')

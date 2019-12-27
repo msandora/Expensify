@@ -4,9 +4,10 @@
     padding: $s-size 0;
 }
 
-// .page-header__actions {
-//     margin-top: $m-size;
-// }
+.page-header__actions .button {
+    margin-right: $s-size;
+}
+
 
 .page-header__title {
     font-weight: 300;

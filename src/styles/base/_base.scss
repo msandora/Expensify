@@ -27,3 +27,10 @@ button:disabled{
 .is-active {
   font-weight: bold;
 }
+
+.income-bg {
+  background-color: $incomes !important;
+}
+.expense-bg {
+  background-color: $expenses !important;
+}
