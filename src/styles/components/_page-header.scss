@@ -1,20 +1,20 @@
 .page-header {
-    background: $off-white;
-    margin-bottom: $l-size;
-    padding: $s-size 0;
+	background: $off-white;
+	margin-bottom: $l-size;
+	padding: $s-size 0;
 }
 
 .page-header__actions {
-    text-align: center;
-    .button:first-child {
-        margin-right: $s-size;
-    }
+	text-align: center;
+	.button:first-child {
+		margin-right: $s-size;
+	}
 } 
 
 .page-header__title {
-    font-weight: 300;
-    margin: 0;
-    span {
-        font-weight: bold;
-    }
+	font-weight: 300;
+	margin: 0;
+	span {
+		font-weight: bold;
+	}
 }

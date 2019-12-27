@@ -1,24 +1,23 @@
 .text-input {
-    height: 50px;
-    font-size: $font-size-large;
-    font-weight: 300;
-    padding: $s-size;
-    border: 1px solid #dbdbdb;
-    border-radius: 0;
-    background: white;
+	height: 50px;
+	font-size: $font-size-large;
+	font-weight: 300;
+	padding: $s-size;
+	border: 1px solid #dbdbdb;
+	border-radius: 0;
+	background: white;
 }
 .DateInput_input, .DateInput_input__focused {
-    @extend .text-input;
-    background-color: transparent !important;
+	@extend .text-input;
+	background-color: transparent !important;
 }
 .DateInput {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 .select {
-    @extend .text-input;
+	@extend .text-input;
 }
-
 .textarea {
-    @extend .text-input;
-    height: 10rem;
+	@extend .text-input;
+	height: 10rem;
 }
