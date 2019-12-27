@@ -22,8 +22,8 @@ export const ExpensesSummary = ({expenseCount, expensesTotal, incomeCount, incom
 					<div className="budget__income clearfix">
 						<div className="budget__income--text">Income</div>
 						<div className="right">
-								<div className="budget__income--value">+ {formattedIncomesTotal}</div>
-								<div className="budget__income--percentage">&nbsp;</div>
+							<div className="budget__income--value">+ {formattedIncomesTotal}</div>
+							<div className="budget__income--percentage">&nbsp;</div>
 						</div>
 					</div>
 					<div className="budget__title">
@@ -32,8 +32,8 @@ export const ExpensesSummary = ({expenseCount, expensesTotal, incomeCount, incom
 					<div className="budget__expenses clearfix">
 						<div className="budget__expenses--text">Expenses</div>
 						<div className="right clearfix">
-								<div className="budget__expenses--value">- {formattedExpensesTotal}</div>
-								<div className="budget__expenses--percentage">&nbsp;</div>
+							<div className="budget__expenses--value">- {formattedExpensesTotal}</div>
+							<div className="budget__expenses--percentage">&nbsp;</div>
 						</div>
 					</div>
 				</div>

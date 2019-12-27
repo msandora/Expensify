@@ -21,7 +21,6 @@ export class EditExpensePage extends React.Component {
       <div>
         {/* Editing the expense with id of {this.props.match.params.id}
         <h1>Edit Expense</h1>*/}
-
         <div className="page-header">
           <div className="content-container">
             <h1 className="page-header__title">Edit Expense</h1>

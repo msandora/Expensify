@@ -3,6 +3,9 @@
     font-size: $font-size-large;
     font-weight: 300;
     padding: $s-size;
+    border: 1px solid #dbdbdb;
+    border-radius: 0;
+    background: white;
 }
 .DateInput_input, .DateInput_input__focused {
     @extend .text-input;

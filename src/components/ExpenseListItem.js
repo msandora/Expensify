@@ -10,16 +10,15 @@ const ExpenseListItem = (props) => {
     props.startRemoveExpense({ id: props.id });
   });
   return (
-    <div className="list-item">
-      <div className="item clearfix" id="expense-0">
+    <div className="list-item item">
         <Link to={`/edit-expense/${props.id}`}>
           <div className="item__description">
-            {props.description}
+            <p class="list-item__title">{props.description}</p>
             {props.note && <p className="list-item__note">{props.note}</p>}
             <p className="list-item__sub-title">{moment(props.createdAt).format('MMMM Do, YYYY')}</p>
           </div>    
         </Link>  
-        <div className="right clearfix">
+        <div className="clearfix">
             <div className="item__value">- {numeral(props.amount / 100).format('$0,0.00')}</div>
             {/*<div className="item__percentage">21%</div> */}
             <div className="item__delete">
@@ -28,7 +27,6 @@ const ExpenseListItem = (props) => {
                 </button>
             </div>
         </div>
-      </div>
     </div>
   ) 
 };

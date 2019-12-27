@@ -16,9 +16,6 @@ export class EditIncomePage extends React.Component {
   render() { 
     return ( 
       <div>
-        {/* Editing the income with id of {this.props.match.params.id}
-        <h1>Edit Income</h1>*/}
-
         <div className="page-header">
           <div className="content-container">
             <h1 className="page-header__title">Edit Income</h1>
